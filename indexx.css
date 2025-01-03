@@ -1,0 +1,150 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    width: 400px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(29, 50, 121);
+}
+.coloranimation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+    border-radius: 10px;
+    height: 85vh;
+    margin: 10vh;
+    animation: bodyback 10s ease-in-out 0s infinite alternate-reverse forwards;
+}
+.input{
+    border-radius: 5px 5px 0 0;
+    align-self: center;
+    border: 2px solid rgb(23, 102, 116);
+    height: 50px;
+    width: 96%;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(243, 236, 236);
+}
+.buttons{
+    border: 2px solid rgb(12, 81, 102);
+    border-radius: 0 0 5px 5px;
+    background-color: rgb(184, 224, 218);
+    display: flex;
+    flex-direction: row;
+    grid-column: 2;
+    padding: 10px;
+}
+button:hover{
+    background-color: rgb(52, 28, 119);
+    border: 2px solid rgb(219, 230, 74);
+    transform: scale(1.1);
+}
+button:active{
+    transform: scale(.9);
+}
+.nums{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.operators{
+    display: flex;
+    flex-direction: column;
+}
+.operators button{
+    background-color: rgb(32, 116, 122);
+    margin: 5px;
+}
+.operators button:hover{
+    background-color: rgb(16, 98, 104);
+    margin: 5px;
+}
+.button{
+    padding: 10px;
+    margin: 2px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    background-color: rgb(78, 61, 175);
+    color: aliceblue;
+}
+#add{
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#equal{
+    width: 160px;
+    border-radius: 10px;
+}
+button{
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    animation: heade 10s ease-in-out 0s infinite forwards;
+}
+@keyframes heade{
+    0%{
+        color: white;
+    }
+    20%{
+        color: rgb(218, 63, 52);
+    }
+    40%{
+        color: rgb(211, 240, 45);
+    }
+    60%{
+        color: rgb(96, 226, 70);
+    }
+    80%{
+        color: rgb(209, 53, 170);
+    }
+    100%{
+        color: rgb(245, 234, 234)
+    }
+}
+@keyframes bodyback{
+    0%{
+        background-color: white;
+    }
+    20%{
+        background-color: rgb(218, 63, 52);
+    }
+    40%{
+        background-color: rgb(211, 240, 45);
+    }
+    60%{
+        background-color: rgb(96, 226, 70);
+    }
+    80%{
+        background-color: rgb(209, 53, 170);
+    }
+    100%{
+        background-color: rgb(245, 234, 234)
+    }
+}
+
+
+
+
